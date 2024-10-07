@@ -13,11 +13,9 @@ if (list.lastElementChild) {
 const two = document.getElementById('two');
 two.classList.add('gray');
 
+const newImage = document.createElement('img');
 
-
- const newImage = document.createElement('img');
-
- newImage.setAttribute('src','https://th.bing.com/th/id/OIP.ZQJe1isoBpFjJCuJfAFgrAHaLc?rs=1&pid=ImgDetMain' );
+newImage.setAttribute('src','https://th.bing.com/th/id/OIP.ZQJe1isoBpFjJCuJfAFgrAHaLc?rs=1&pid=ImgDetMain' );
  two.appendChild(newImage);
 
  const three = document.getElementById('three');
@@ -31,15 +29,17 @@ three.appendChild(newGif);
  const five = document.getElementById('five');
  five.classList.add('green');
 
- const four = document.getElementById('four');
- four.classList.add('black');
-
-
-
+ const secondGif = document.createElement('img');
+ secondGif.setAttribute('src','https://www.bing.com/th/id/OGC.141ac56342758156da371809b8a4ac56?pid=1.7&rurl=https%3a%2f%2fmedia.tenor.com%2fzHeQWiJaX0oAAAAC%2ffrank-frankocean.gif&ehk=j8sb%2br4jh0VPBFvRuKr1A6X5d6gR2XJkTqdRzPP6B8s%3d');
+five.appendChild(secondGif);
  
 
+const four = document.getElementById('four');
+ four.classList.add('black');
 
-
+ const thirdGif = document.createElement('img');
+ thirdGif.setAttribute('src','https://media1.tenor.com/m/LvqG6dvSYFEAAAAd/frank-ocean-endless.gif');
+ four.appendChild(thirdGif);
 
 
 document.body.style.backgroundImage = 'url(https://wallpapers.com/images/high/frank-ocean-in-blonde-helmet-aoai04qxdqno539u.webp)';
