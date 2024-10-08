@@ -6,19 +6,19 @@ use the parent child sibling (firstChild, lastChild, parentNode, nextElementSibl
 
 iterate over a collection of elements -- i did this 
 
-createElement 
+createElement -- i did this
 
-appendchild
+appendchild -- i did this
 
 documentFragment 
 
-innerHTML, innerText, or textContent
+innerHTML, innerText, or textContent -- i did this
 
-modify the style and or css classes of an element using style or class list
+modify the style and or css classes of an element using style or class list -- i did this 
 
 modify atleast one attribue of an element in repsonse  
 
-register at least two different event listeners and create the associated event handler functions
+register at least two different event listeners and create the associated event handler functions - i did this 
 
 use atleast two Browser object model 
 

@@ -1,15 +1,81 @@
 header {
-    text-align: center;
-    margin: 3rem 0px;
-    border: 50px color blue;
-
+    width:50%;
+    margin:0 auto;
+    display:block;
+    float:none;
     }
 
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+    position: relative;
+}
+
+
+#albums{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none; /* Initially hidden */
+    position: absolute; /* Position relative to the nav */
+    top: 60px; /* Below the navbar */
+    right: 20px; /* Align with the toggle button */
+    background-color: #333; /* Same as navbar background */
+    border: 1px solid #ccc; /* Optional: border for the dropdown */
+    border-radius: 5px; /* Optional: rounded corners */
+    z-index: 1; /* Ensure it appears above other content */
+}
+    
+#albums li {
+    margin: 0;
+    padding:10px;
+}
+
+#toggle-menu {
+    display: none; 
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+}
+
+#albums a {
+    color: white;
+    text-decoration: none;
+}
+
+#albums a:hover {
+    text-decoration: underline;
+}
+#albums {
+    display: none; 
+    flex-direction: column; 
+    position: absolute;
+    top: 60px; 
+    right: 0;
+    background-color: #333;
+    width: 100%;
+}
+
+#albums.show {
+    display: block; 
+}
+
+#toggle-menu {
+    display: block; /* Show the toggle button */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+}
+
+
+  
 
 .gray {
             font-size: medium;

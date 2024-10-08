@@ -4,7 +4,7 @@
  
 
 
-const list = document.getElementById ("albums");
+const list = document.getElementById("albums");
 
 if (list.lastElementChild) {
    list.removeChild(list.lastElementChild);
@@ -45,5 +45,16 @@ const four = document.getElementById('four');
 document.body.style.backgroundImage = 'url(https://wallpapers.com/images/high/frank-ocean-in-blonde-helmet-aoai04qxdqno539u.webp)';
 document.body.style.backgroundSize = "cover"; 
 
+const toggleButton = document.getElementById('toggle-menu');
+const albums = document.querySelector('#albums');
 
+toggleButton.addEventListener('click', () => {
+    albums.classList.toggle('show'); 
+});
+
+document.addEventListener('click', (event) => {
+   if (!toggleButton.contains(event.target) && !albums.contains(event.target)) {
+      albums.classList.remove('show');
+   }
+});
 
