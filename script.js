@@ -1,3 +1,5 @@
+
+ 
  const heading = document.getElementById('main-title');
 
  heading.textContent = 'Frank Ocean and his Creative Projects';
@@ -58,3 +60,24 @@ document.addEventListener('click', (event) => {
    }
 });
 
+
+const form = document.getElementById('favorite-album-form');
+const successMessage = document.getElementById('success-message');
+const errorMessage = document.getElementById('error-message');
+
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const album = document.getElementById('album').value.trim();
+
+    // Simple validation
+    if (album.length === 0) {
+        errorMessage.textContent = 'Please enter your favorite album.';
+        successMessage.textContent = '';
+    } else {
+        successMessage.textContent = `Your favorite album "${album}" has been submitted!`;
+        errorMessage.textContent = '';
+        alert(`Your favorite album is: ${album}`); // Show alert with the album
+        form.reset(); // Reset the form
+    }
+   });
